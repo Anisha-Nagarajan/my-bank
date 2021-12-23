@@ -1,0 +1,44 @@
+<app-navigation></app-navigation>
+
+  <div class="container">
+    <div class="form-group">
+      <label>Principal Amount</label>
+      <input type="number" placeholder="0" 
+      class="form-control" [(ngModel)]="principal">
+    </div>
+
+    <div class="form-group">
+      <label>Rate</label>
+      <input type="number" placeholder="0" 
+      class="form-control" [(ngModel)]="rate">
+    </div>
+
+    <div class="form-group">
+      <label>Duration (In Years)</label>
+      <input type="number" placeholder="0" 
+      class="form-control" [(ngModel)]="time">
+    </div>
+
+    <div class="form-group">
+      <input type="submit" placeholder="0" 
+      class="form-control btn btn-primary" 
+      value="Calculate" (click)="simpleInterest()">
+    </div>
+
+    <div class="form-group">
+      <label>Interest</label>
+      <input type="number" placeholder="0" 
+      class="form-control" disabled [(ngModel)]="si">
+    </div>
+
+  </div>
+<!-- </div>
+</div>
+<br> -->
+
+<!-- <div class="container row">
+<div class="container col-md-6 col-md-offset-3"><h4> -->
+    <div class="container1">
+  <h3> &nbsp;Maturity Amount = {{amt | currency:'INR' }}</h3>
+  </div>
+<!-- </h4></div></div> -->

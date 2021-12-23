@@ -1,0 +1,27 @@
+<app-navigation></app-navigation>
+
+<div class="container">
+<form [formGroup]="FundsForm" >
+
+    <label for="from">Source Accout No: </label>
+    <input id="from" class="form-control" type="text" formControlName="from">
+  
+    <label for="to">Beneficiary Account No: </label>
+    <input id="to" class="form-control"type="text" formControlName="to">
+
+    <label for="tobname">Beneficiary Branch Name No: </label>
+    <input id="tobname"class="form-control" type="text" formControlName="tobname">
+
+    <label for="bname">Bank Name: </label>
+    <input id="bname"class="form-control" type="text" formControlName="bname">
+
+    <label for="amount">Transfer Amount: </label>
+    <input id="amount"class="form-control" type="text" formControlName="amount">
+
+    <label for="date">Date: </label>
+    <input type="datetime-local"class="form-control" id="Test_DatetimeLocal" formControlName="date">
+  </form>
+  <div class="form-group text-center">
+  <input type="button" (click)="window.alert('Your Money is being transferred')" class="btn btn-primary" value="Transfer">
+  </div>
+</div>
